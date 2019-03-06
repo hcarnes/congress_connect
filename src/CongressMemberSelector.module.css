@@ -1,0 +1,39 @@
+.mainWrapper {
+  display: grid;
+  grid-template-rows: 4em auto;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.memberWrapper {
+  display: grid;
+  grid-auto-rows: minmax(50px, auto);
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.memberWrapper > li {
+  background-color: #eee;
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.memberWrapper > li:nth-last-child(odd) {
+  background-color: #c9d4e7;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: darkred;
+  cursor: pointer;
+}
